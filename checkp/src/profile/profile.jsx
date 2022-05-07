@@ -7,10 +7,13 @@ function Profile({data,imgsource}){
             <p className="fullName"> {data.fullName}</p>
             <p className="bio">{data.bio}</p>
             <p className="profession">{data.profession}</p>
-            
+            <Handlename name = {data.fullName}/>
 
         </div>
     );
+    function Handlename(name){
+        alert(name.name)
+    }
 }
 export default Profile
 Profile.defaultPr = {
